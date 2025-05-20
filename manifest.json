@@ -5,7 +5,11 @@
   "description": "Fixes direction of KaTeX display blocks to LTR",
   "content_scripts": [
     {
-      "matches": ["*://chatgpt.com/*"],
+      "matches": [
+        "*://chat.openai.com/*",
+        "*://chatgpt.com/*",
+        "*://chat.deepseek.com/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
